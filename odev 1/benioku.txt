@@ -1,0 +1,33 @@
+merhaba,
+
+programýn bazý özellikleri;
+
+1-girilen iki sayýdan biri 0 olursa algoritma baþlamadan 
+0 sonucu üretir.
+
+2-herhangi bir karakter içeren string girilebilir rakam
+dýþýndakiler atýlýr.
+
+3-harf girilip rakam girilmezse o sayý 0 kabul edilir.
+
+4-girilen ilk sayý ilk okulda yaptýðýmýz çarpma iþlemi gibi
+sayýlarý üst üste koyarak yaptýðýmýzý düþünürsek üsttekini
+temsil ediyor. Ýkincisi ise alttaki sayýyý temsil ediyor.
+
+5-Girilecek sayýlar sýnýrsýz uzunlukta olabilir. Yalnýz 
+powershell veya cmd'de girilebilecek komut
+sýnýrlý uzunlukta olduðundan dilenirse sayi1.txt ve
+sayi2.txt dosyalarýna çok uzun sayýlar girilerek sonuç sonuc.txt
+dosyasýna yazýdýrýlabilir. Burada bizi sýnýrlayan tek þey bellek miktarý
+ve bilgisayarýmýz iþlem gücü. Zira bende 500'e 500lük bir iþlem tam 15 sn
+sürüyor. Bu iþlem için tek yapmak gereken test.cpp'de
+SayilariTxtDosyalarindanAl() yorum satýrýný kod satýrý yapmak.
+
+6-Yanlýþ bir çarpma iþlemi yaptýðýmýzdan 128*92 ile
+92*128 ayný olmayacaktýr. Bu sebeple ikinci yani alttaki
+sayýnýn her bir sýfýrýn üstteki sayý ile çarpýmý da sýfýr
+olacaðýndan bu sýfýrlar atýlarak döngü sayýsý azaltýlýr.
+
+örneðin 200*616 diyelim sonucumuz = 6*(200)+1*(200)+6*(200)=2600 olur.
+ama 616*200 = 0*(616)+0*(616)+2*(616) = 1232dür.
+görüldüðü üzere alttaki sayýnýn sýfýrlarýnýn bi önemi yok iken üsttekiler önemlidir.
